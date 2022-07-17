@@ -1,0 +1,26 @@
+/* StructureOperation.c */
+void AddStructPbody(const int nadd);
+void AddStructPhydro(const int nadd);
+void AddStructPstar(const int nadd);
+void AddStructPsink(const int nadd);
+void SortAllStructures(void);
+void StretchStructPbody(const int nadd);
+void StretchStructPhydro(const int nadd);
+void StretchStructPstar(const int nadd);
+void StretchStructPsink(const int nadd);
+void GenerateStructPbody(const int Nallocate);
+void GenerateStructPhydro(const int Nallocate);
+void GenerateStructPstar(const int Nallocate);
+void GenerateStructPsink(const int Nallocate);
+void FreeStructPbody(void);
+void FreeStructPhydro(void);
+void FreeStructPstar(void);
+void FreeStructPsink(void);
+StructPbodyptr ReturnEmptyBodyStructurePointer(void);
+StructPstarptr ReturnEmptyStarStructurePointer(void);
+StructPsinkptr ReturnEmptySinkStructurePointer(void);
+void ReConnectPointers(void);
+void StructureReportPbody(const int Index);
+void StructureReportPhydro(const int Index);
+void StructureReportPstar(const int Index);
+void StructureReportPsink(const int Index);
