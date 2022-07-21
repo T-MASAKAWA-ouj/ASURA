@@ -1,0 +1,19 @@
+This code has to include "~/lib/celib_hirai2" library.
+
+module load gsl/2.4_cray-8.6
+
+This code incorporates bar potential in addition to MilkyWay potential.
+
+The effect of hypernovae is removed.
+OPTIONS     +=      -DCHEMICALEVOLUTION_SNII_HYPERNOVA_FRACTION=0.00 # Hypernova fraction
+#OPTIONS     +=      -DUSE_CELIB_HN  # Use HN mode
+
+The effect of Electron-Capture Supernovae is removed.
+#OPTIONS     +=      -DUSE_CELIB_ECSN  # Use ECSN mode
+
+/*
+If only TypeII SNe are adopted, set the option as follows:
+OPTIONS     +=      -DDELAYED_FEEDBACK
+#OPTIONS     +=      -DUSE_CELIB
+#OPTIONS     +=      -DUSE_CELIB_NSM  # Use NSM mode
+*/

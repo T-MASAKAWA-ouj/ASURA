@@ -11493,9 +11493,9 @@ void InitializeParticleDistributionForMilkyWay(const int Number, const double Ma
         Phydro[i]->Body = Pbody[i];
     }
 
-#define MgasFrac 0.15 // default
+// #define MgasFrac 0.15 // default
 // #define MgasFrac 0.075 // half mass
-// #define MgasFrac 0.0375 // quarter mass
+#define MgasFrac 0.0375 // quarter mass
     double Mgas = MgasFrac*4.e+10*MSUN_CGS/Pall.UnitMass;
     double Rdisk = 3.5*KPC_CGS/Pall.UnitLength;	// scale length	of a stellar disk
     double z0 = 400.0*PC_CGS/Pall.UnitLength;	// scale height of a stellar disk
